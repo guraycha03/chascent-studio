@@ -506,27 +506,35 @@ header .logo {
 }
 
 .modal-product-visual {
-    flex-shrink: 0; 
-    width: 100%; 
-    max-height: 400px; 
+    flex-shrink: 0;
+    width: 100%;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent); 
-    border-radius: 5px;
-    min-height: 150px; 
-    margin-top: 40px; 
-    padding-top: 20px;
+    background-color: var(--accent);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    aspect-ratio: 4 / 3; /* keeps it balanced */
 }
 
 .modal-product-visual img {
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
     display: block;
-    object-fit: contain; 
-    border-radius: 5px;
-    margin-top: 5px;
 }
+
+@media (max-width: 480px) {
+    .modal-product-visual img {
+      max-width: 110%; /* slightly bigger than container */
+      transform: scale(1.05); /* gentle zoom */
+    }
+  }
+  
 
 .modal-product-details {
     flex-grow: 1; 
@@ -621,6 +629,14 @@ header .logo {
         right: 25px; 
     }
 }
+
+@media (max-width: 480px) {
+    .image-modal-close {
+      top: -10px; /* move it closer to top */
+      right: 10px; /* optional: closer to edge */
+    }
+  }
+  
 
 /* where to find us section */
 
