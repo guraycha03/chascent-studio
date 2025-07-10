@@ -74,15 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImage.alt = name + " - Product image";
     modalProductName.textContent = name;
     modalProductDesc.innerHTML = description;
-
-
-    // Hide the "Shop Now" button
     modalShopButton.style.display = 'none';
 
     imageModal.classList.add('active');
     body.classList.add('no-scroll');
 };
-
 
     // Function to close the modal
     const closeModal = () => {
@@ -93,8 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImage.alt = '';
     modalProductName.textContent = '';
     modalProductDesc.textContent = '';
-
-    // Reset the "Shop Now" button visibility (optional)
     modalShopButton.style.display = 'inline-block';
 };
 
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add click event listener to the close button
     closeModalBtn.addEventListener('click', closeModal);
 
-    // Close modal if user clicks outside the image content (on the overlay)
+    // Close modal if user clicks outside the image content
     imageModal.addEventListener('click', (event) => {
         if (event.target === imageModal) {
             closeModal();
@@ -132,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- About Us Image Slideshow (Fading) ---
+    // --- About Us Image Slideshow ---
     const aboutImagesContainer = document.querySelector('.about-image');
     const aboutImages = aboutImagesContainer ? aboutImagesContainer.querySelectorAll('img') : [];
     let currentAboutImageIndex = 0;

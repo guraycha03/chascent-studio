@@ -530,11 +530,10 @@ header .logo {
 
 @media (max-width: 480px) {
     .modal-product-visual img {
-      max-width: 110%; /* slightly bigger than container */
-      transform: scale(1.05); /* gentle zoom */
+      max-width: 110%;
+      transform: scale(1.05); 
     }
   }
-  
 
 .modal-product-details {
     flex-grow: 1; 
@@ -626,20 +625,20 @@ header .logo {
     }
 
     .image-modal-close {
+     
         right: 25px; 
     }
 }
 
 @media (max-width: 480px) {
     .image-modal-close {
-      top: -10px; /* move it closer to top */
-      right: 10px; /* optional: closer to edge */
+      top: -10px; 
+      right: 10px; 
     }
   }
   
 
-/* where to find us section */
-
+/* --- Where to Find Us Section--- */
 .find-us-section {
     background-color: var(--bg-banner);
     padding: 60px 20px;
@@ -700,14 +699,6 @@ header .logo {
   .location-map-link:hover {
     background-color: var(--button-hover);
   }
-  
-
-
-
-
-
-
-
 
 /* --- Contact Section Styles --- */
 .contact-section {
