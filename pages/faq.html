@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chascent | FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+
+  <style>
+
+    .faq-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .faq-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--text-dark);
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .faq-item {
+      background-color: var(--card-bg);
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-soft);
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: var(--bg-banner);
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active::after {
+      content: '-';
+    }
+
+    .faq-answer {
+      font-size: 1rem;
+      color: var(--text-soft);
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+
+    .faq-answer.open {
+    padding: 1rem 1.5rem;
+    max-height: 1000px; 
+  }
+
+
+    @media (max-width: 768px) {
+      .faq-container {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+      }
+
+      .faq-container h2 {
+        font-size: 2rem;
+      }
+
+      .faq-question {
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem;
+      }
+
+      .faq-answer {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faq-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .faq-question {
+        font-size: 1rem;
+      }
+
+      .faq-answer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Chascent</a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+    </button>
+
+    <nav id="main-nav">
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#about-us">About Us</a></li>
+          <li><a href="/index.html#products">Products</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+      </ul>
+  </nav>
+  
+</header>
+
+  <main class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+  
+    <div class="faq-item">
+      <div class="faq-question">What is Chascent all about?</div>
+      <div class="faq-answer">Chascent is a curated showcase of handmade goods — highlighting natural materials, simple forms, and timeless craft. It’s a place for slow-made inspiration, not a store.</div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Are the products available for purchase?</div>
+      <div class="faq-answer">This site doesn’t process orders. Some featured pieces may be available for purchase through other shops or makers. If available, links or contact info may be provided.</div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Where are these handmade items from?</div>
+      <div class="faq-answer">The featured items are either created in-house or selected from small makers with a strong focus on sustainability, craftsmanship, and authenticity.</div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Do you offer custom orders?</div>
+      <div class="faq-answer">Custom orders are not processed directly on this site. However, you can reach out through the contact section if you have a specific inquiry — we may refer you to the right maker.</div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">Are the materials really eco-friendly?</div>
+      <div class="faq-answer">Yes. Items featured are chosen for their use of eco-conscious elements — such as bamboo, cotton rope, natural ceramics, or reclaimed materials.</div>
+    </div>
+    
+    <<div class="faq-item">
+      <div class="faq-question">Is Chascent a physical store?</div>
+      <div class="faq-answer">We collaborate with independent makers. Items are displayed in a shared studio, and you may visit by appointment.</div>
+    </div>
+    
+    
+    <div class="faq-item">
+      <div class="faq-question">How can I care for the items?</div>
+      <div class="faq-answer">Each product description offers simple care tips. In general, avoid harsh cleaners, and store in dry areas. Gentle use keeps natural items beautiful longer.</div>
+    </div>
+    
+  </main>
+
+  <footer>
+        <div class="footer-content">
+          <a href="/index.html" class="footer-logo">Chascent</a>
+          <div class="footer-links">
+              <a href="/index.html#about-us">About Us</a>
+              <a href="/index.html#contact">Contact</a>
+              <a href="https://your-shop-site.com">Shop</a> <!-- Or link to real shop -->
+              <a href="/pages/faq.html">FAQs</a>
+          </div>          
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-pinterest"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 20l4 -9" /><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Chascent All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+          question.classList.toggle('active');
+          answer.classList.toggle('open');
+
+          if (answer.classList.contains('open')) {
+            answer.style.maxHeight
+          } else {
+            answer.style.maxHeight = null;
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>
