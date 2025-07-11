@@ -26,7 +26,8 @@ Smooth scrolling and subtle animations powered by pure HTML, CSS, and vanilla Ja
 
 - 
 ## Live Site
-Visit Chascent Studio →
+
+[Visit Chascent Studio →](https://guraycha03.github.io/chascent-studio/)
 
 ## Inspiration
 
@@ -34,10 +35,10 @@ Chascent Studio draws inspiration from small artisan markets, local craftsmanshi
 
 ## Contact
 
-Feel free to reach out or check my other work here: [your-portfolio-link.com](https://your-portfolio-link.com)
+Feel free to reach out or check my other work here: [your-portfolio-link.com](https://cha-portfolio-five.vercel.app/)
 
 ---
 
-> Designed and built by [Charisse](https://cha-portfolio-five.vercel.app/)
+> Designed and built by [Charisse](https://github.com/guraycha03?tab=repositories)
 
 
