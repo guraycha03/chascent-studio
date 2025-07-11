@@ -24,7 +24,6 @@ Smooth scrolling and subtle animations powered by pure HTML, CSS, and vanilla Ja
 - **CSS3** – custom styling with soft, calm color palette
 - **JavaScript** – basic DOM manipulation and enhancements
 
-- 
 ## Live Site
 
 [Visit Chascent Studio →](https://guraycha03.github.io/chascent-studio/)
