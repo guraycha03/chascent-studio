@@ -267,6 +267,13 @@ header .logo {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .background-banner {
+      background-attachment: scroll;
+    }
+  }
+  
+
 .overlay-content {
     position: relative;
     z-index: 2;
@@ -491,18 +498,20 @@ header .logo {
     display: flex;
     flex-direction: column; 
     gap: 20px; 
-    transform: scale(0.9);
-    transition: transform 0.3s ease, flex-direction 0.5s ease;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
     overflow-y: auto; 
     scrollbar-width: none;
 }
 
 .image-modal-content::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none; 
   }
 
 .image-modal.active .image-modal-content {
-    transform: scale(1); 
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .modal-product-visual {

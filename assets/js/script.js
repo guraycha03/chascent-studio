@@ -141,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (aboutImages.length > 0) {
         aboutImages[0].classList.add('active');
-        setInterval(updateAboutImage, 5000);
+        setInterval(updateAboutImage, 3000);
+
     }
 
 });
