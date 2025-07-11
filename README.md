@@ -34,7 +34,7 @@ Chascent Studio draws inspiration from small artisan markets, local craftsmanshi
 
 ## Contact
 
-Feel free to reach out or check my other work here: [your-portfolio-link.com](https://cha-portfolio-five.vercel.app/)
+Feel free to reach out or check my other work here: 🍵](https://cha-portfolio-five.vercel.app/)
 
 ---
 
